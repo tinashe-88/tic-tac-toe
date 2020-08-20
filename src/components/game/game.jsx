@@ -46,23 +46,23 @@ const Game = () => {
   
 
   return (
-    <>
-      <Board squares={history[stepNumber]} onClick={handleClick}/>
+    <div className="flex flex-column flex-row-ns">
       <div className="dt mw6 center pv0 pv2-m pv3-ns">
-        <div className="dtc v-mid">
-          <h3>History</h3>
-          {renderMoves()}
-        </div>
-        <div className="dtc v-mid pl5">
-          <h3>
+        <div className="dtc pr2">
+          <h2>
             {
               winner ? "The Winner is " + winner :
               "Next Player: " + x_o
             }
-          </h3>
+          </h2>
+        </div>
+        <Board squares={history[stepNumber]} onClick={handleClick}/>
+        <div className="dtc pl4">
+          <h3>History</h3>
+          {renderMoves()}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
