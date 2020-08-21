@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import Board from '../board/board'
-import CustomButton from '../custom-button/custom-button'
 
 import { calculateWinner } from '../../helper/helper'
 
@@ -36,11 +35,17 @@ const Game = () => {
     history.map((step, move) => {
       const destination = move ? `Go to move #${move}` : `Go to Beginning`
       return (
-        <li key={move}>
-          <CustomButton onClick={() => jumpTo(move)}>
+        <ul 
+          key={move}
+          className="list pl0 ml0 center mw6 ba b--light-silver br2"
+        >
+          <li 
+            onClick={() => jumpTo(move)}
+            className="ph3 pv2 bb b--light-silver"
+          >
             {destination}
-          </CustomButton>
-        </li>
+          </li>
+        </ul>
       )
     })
   
@@ -57,9 +62,11 @@ const Game = () => {
           </h2>
         </div>
         <Board squares={history[stepNumber]} onClick={handleClick}/>
-        <div className="dtc pl4 pl3-ns">
+        <div className="dtc pl4 pl3-ns overflow-y:hidden">
           <h3 className="f3 f4-m f3-l fw2">History</h3>
-          {renderMoves()}
+          <ul className="list pl0 ml0 center mw5 br3">
+            {renderMoves()}
+          </ul>
         </div>
       </div>
     </div>
