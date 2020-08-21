@@ -44,17 +44,12 @@ h1 {
 }
 
 .squares {
-  background: #777;
+  background: #ccc;
   border: none;
   font-size: 5rem;
   /* font-weight: 800; */
   cursor: pointer;
   outline: none;
-
-  @media screen and (max-width: 800px) {
-    width: 126px;
-    height: 126px;
-  }
 }
 
 .X {

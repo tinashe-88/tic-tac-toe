@@ -13,6 +13,8 @@ export const Footer = () => (
           className="link near-black hover-silver dib h2 w2 mr3" 
           href="https://github.com/tinashe-88" 
           title="GitHub"
+          target="__blank"
+          rel="noopener noreferrer"
         >
           <svg 
             fill="currentColor" 
@@ -32,6 +34,8 @@ export const Footer = () => (
           className="link hover-silver near-black dib h2 w2 mr3" 
           href="https://instagram.com/tinashe88" 
           title="Instagram"
+          target="__blank"
+          rel="noopener noreferrer"
         >
           <svg 
             fill="currentColor" 
@@ -49,8 +53,10 @@ export const Footer = () => (
         </a>
         <a 
           className="link hover-silver near-black dib h2 w2 mr3" 
-          href="https://linkedin.com" 
+          href="https://linkedin.com/in/tinashe-chiweshe-3112768b" 
           title="LinkedIn"
+          target="__blank"
+          rel="noopener noreferrer"
         >
           <svg 
             fill="currentColor" 
@@ -71,6 +77,8 @@ export const Footer = () => (
           className="link hover-silver near-black dib h2 w2 mr3" 
           href="https://twitter.com/tinashe_88" 
           title="Twitter"
+          target="__blank"
+          rel="noopener noreferrer"
         >
           <svg 
             fill="currentColor" 
