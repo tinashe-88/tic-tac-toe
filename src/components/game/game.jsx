@@ -37,11 +37,11 @@ const Game = () => {
       return (
         <ul 
           key={move}
-          className="list pl0 ml0 center mw6 ba b--light-silver br2"
+          className="list pl0 ml0 center mw6 ba b--light-silver"
         >
           <li 
             onClick={() => jumpTo(move)}
-            className="ph3 pv2 bb b--light-silver"
+            className="ph2 pv2 b--light-silver"
           >
             {destination}
           </li>
@@ -64,9 +64,7 @@ const Game = () => {
         <Board squares={history[stepNumber]} onClick={handleClick}/>
         <div className="dtc-ns pl3-ns">
           <h3 className="f3 f4-m f3-l fw2">History</h3>
-          <ul className="list pl0 ml0 center mw5 br3">
-            {renderMoves()}
-          </ul>
+          {renderMoves()}
         </div>
       </div>
     </div>
