@@ -76,3 +76,18 @@ li {
   padding: 0.5rem;
   margin: 0.5rem 1rem;
 }
+
+/* Board component mobile styles */
+@media only screen and (max-width: 425px){
+  .board {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+/* Squares mobile styles */
+@media only screen and (max-width: 425px){
+  .squares {
+    font-size: 2rem;
+  }
+}

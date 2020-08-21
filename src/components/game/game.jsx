@@ -53,7 +53,7 @@ const Game = () => {
   return (
     <div className="flex flex-column flex-row-ns">
       <div className="dt mw0 center pv0 pv2-m pv3-ns">
-        <div className="dtc pr4">
+        <div className="dtc-ns pr4-ns mb3 ">
           <h2 className="f3 f4-m f3-l fw2">
             {
               winner ? "The Winner is " + winner :
@@ -62,7 +62,7 @@ const Game = () => {
           </h2>
         </div>
         <Board squares={history[stepNumber]} onClick={handleClick}/>
-        <div className="dtc pl4 pl3-ns overflow-y:hidden">
+        <div className="dtc-ns pl3-ns">
           <h3 className="f3 f4-m f3-l fw2">History</h3>
           <ul className="list pl0 ml0 center mw5 br3">
             {renderMoves()}
